@@ -1,0 +1,66 @@
+/* Small readability and branding tweaks for the blog */
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color: #0f172a;
+  background: #fff;
+}
+
+/* Post container width */
+.content {
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.65;
+  font-size: 18px;
+}
+
+/* Lead paragraph */
+.lead {
+  font-size: 1.1rem;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+/* Headings spacing */
+h2 { margin-top: 2rem; margin-bottom: .5rem; }
+h3 { margin-top: 1.25rem; margin-bottom: .4rem; }
+
+/* blockquote callouts */
+blockquote {
+  border-left: 4px solid #2563eb;
+  background: #f1f5ff;
+  padding: 0.8rem 1rem;
+  border-radius: 6px;
+}
+
+/* Code block and inline code */
+pre, .highlight pre {
+  background: #0b1220;
+  color: #e6edf3;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow: auto;
+}
+code {
+  background: rgba(27,31,35,0.05);
+  padding: .12em .3em;
+  border-radius: 6px;
+}
+
+/* Copy button for code blocks */
+.copy-btn {
+  position: absolute;
+  right: 0.6rem;
+  top: 0.6rem;
+  background: rgba(255,255,255,0.06);
+  color: #fff;
+  border: none;
+  padding: .25rem .5rem;
+  border-radius: 6px;
+  font-size: .8rem;
+  cursor: pointer;
+}
+
+/* Images responsive */
+img { max-width: 100%; height: auto; }
