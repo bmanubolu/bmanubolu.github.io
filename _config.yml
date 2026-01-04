@@ -4,7 +4,7 @@ url: "https://bmanubolu.github.io"
 baseurl: ""        # user site served at root
 
 # Minimal Mistakes remote theme
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+theme: "minimal-mistakes-jekyll"
 
 # Author info
 author:
