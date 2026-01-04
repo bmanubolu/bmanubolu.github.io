@@ -1,15 +1,25 @@
 ---
-layout: home
 title: "AI & QA Playbook"
+layout: home
+hero:
+  title: "AI & QA Playbook"
+  text: "Practical AI-driven testing playbooks, reproducible prompts, and QA experiments."
+  actions:
+    - label: "Browse Use Cases"
+      url: /use-cases/ai/
+    - label: "Read QA Ideas"
+      url: /use-cases/qa/
 ---
 
-Welcome — this site collects practical AI use cases and useful ideas for QA engineers.
+## Featured
 
-Quick links
-- [AI use cases](/use-cases/ai)
-- [QA ideas](/use-cases/qa)
-- [About](/about)
+- Test generation from function signatures — examples & prompt templates  
+- Synthetic test-data recipes — constrained JSON generators  
+- Flaky-test triage playbook — automations and annotations
 
-Getting started
-- Add new notes as Markdown files under the `use-cases/` folder.
-- Use headings and front matter to control titles and metadata.
+## Quick links
+
+- [AI Use Cases](/use-cases/ai)
+- [QA Ideas](/use-cases/qa)
+- [Prompts & Templates](/prompts)
+- [Blog](/blog/)
