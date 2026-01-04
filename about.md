@@ -4,7 +4,7 @@ layout: page
 permalink: /about/
 ---
 
-<p class="lead">I'm B. Manubolu — a QA engineer focused on making testing faster, more reliable, and more automatable using AI.</p>
+<p class="lead">I'm Lakshmi Bavannarayan Manubolu (Bavan) — a passionate QA engineer focused on making testing faster, more reliable, and more automatable using AI.</p>
 
 This personal blog collects playbooks, step-by-step experiments, and reusable prompts that help QA teams adopt AI responsibly and effectively.
 
