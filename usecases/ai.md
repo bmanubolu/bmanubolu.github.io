@@ -1,32 +1,26 @@
 ---
 title: AI Use Cases
+layout: page
+permalink: /use-cases/ai/
 ---
 
-Overview
-- Applying AI to accelerate testing, generate data, triage issues, and assist triage.
+# AI Use Cases
 
-Selected use cases
+This section collects practical AI-driven use cases for QA and engineering teams.
 
-1) Test-case generation
-- Idea: Generate unit / integration test scaffolding from function signatures + docstrings.
-- Prompt example:
-  - "Given this function signature and docstring, produce 3 unit tests with clear inputs, expected outputs, and brief test descriptions."
+## Test-case generation
+- Use a prompt that includes function signatures, docstrings, and examples to produce unit tests.
 
-2) Test-data synthesis
-- Idea: Create realistic synthetic datasets that match schemas, edge cases, and privacy constraints.
-- Example approach: Describe schema + constraints then ask model to produce N JSON records.
+Prompt example:
+```
+Given this function signature and docstring, produce 3 unit tests with inputs, expected outputs, and short descriptions...
+```
 
-3) Automated test flakiness triage
-- Idea: Analyse failing test logs and suggest probable causes (timing, resources, ordering).
-- What to capture: recent commits, rerun logs, environment, stack traces.
+## Test-data synthesis
+- Describe schema, constraints, and edge cases; ask the model to produce JSON records that match constraints.
 
-4) QA assistant (chat)
-- Idea: Provide a conversational assistant for test authors:
-  - Generate test ideas given a feature description.
-  - Suggest mutation, boundary, and negative tests.
-- Example prompt:
-  - "You are a QA assistant. For feature X (describe), suggest 10 tests covering functional, edge, and negative cases."
+## Flaky-test triage
+- Collect rerun logs and stack traces; ask an assistant to rank likely causes and suggest next steps (rerun, isolate, increase timeout).
 
-Integration notes
-- Keep prompt templates in the repo (version them).
-- Run models in ephemeral environments; log inputs and outputs for reproducibility and safety.
+## QA assistant
+- A chat assistant that suggests tests, suggests mutation tests, and generates minimal reproducible cases from logs.
