@@ -1,25 +1,31 @@
 ---
-title: "AI & QA Playbook"
 layout: home
+title: "AI & QA Playbook"
 hero:
   title: "AI & QA Playbook"
-  text: "Practical AI-driven testing playbooks, reproducible prompts, and QA experiments."
+  text: "Personal blog by B. Manubolu — experiments, tutorials, and playbooks for applying AI in software quality assurance."
   actions:
+    - label: "Read the Blog"
+      url: /blog/
     - label: "Browse Use Cases"
-      url: /use-cases/ai/
-    - label: "Read QA Ideas"
-      url: /use-cases/qa/
+      url: /use-cases/
 ---
 
-## Featured
+## Latest from the blog
 
-- Test generation from function signatures — examples & prompt templates  
-- Synthetic test-data recipes — constrained JSON generators  
-- Flaky-test triage playbook — automations and annotations
+{%- for post in site.posts limit:3 -%}
+- [{{ post.title }}]({{ post.url }}) — {{ post.excerpt | strip_html | truncate: 120 }}
+{%- endfor -%}
+
+## Focus areas
+
+- AI-assisted test generation & test-data synthesis  
+- Flaky-test detection and triage playbooks  
+- Practical prompts & templates for QA workflows  
+- Tools, scripts, and short reproducible experiments
 
 ## Quick links
-
-- [AI Use Cases](/use-cases/ai)
-- [QA Ideas](/use-cases/qa)
-- [Prompts & Templates](/prompts)
-- [Blog](/blog/)
+- [Use Cases](/use-cases/)
+- [Prompts](/prompts/)
+- [Tools & Scripts](/tools/)
+- [About](/about/)

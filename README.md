@@ -1,8 +1,12 @@
-# AI & QA Playbook — bmanubolu.github.io
+# AI & QA Playbook — Personal blog (QA + AI)
 
-This repo contains a Minimal Mistakes Jekyll site (docs + blog hybrid) for AI use cases and QA playbooks.
+This is a Minimal Mistakes Jekyll blog focused on applying AI to software QA: playbooks, prompts, and small scripts.
 
-To publish:
-1. Create a repository named: bmanubolu.github.io
-2. Add/modify files and push to `main`.
-3. GitHub Pages will build the site automatically (Jekyll, remote theme).
+Repository structure (recommended)
+- _posts/                # blog posts
+- _use_cases/            # structured playbooks and experiments (collection)
+- _prompts/              # prompt templates (collection)
+- _tools/                # scripts and small demos (collection)
+- assets/images/         # logo, featured images
+- assets/css/custom.css  # small UI tweaks
+- assets/js/copy-code.js # copy-to-clipboard for code blocks

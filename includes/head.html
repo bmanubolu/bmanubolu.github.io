@@ -1,0 +1,9 @@
+{%- comment -%}
+Custom head additions: include custom CSS and JS after the theme head.
+Keep the theme default head by including the original head first (Minimal Mistakes includes its own head),
+then add these lines to inject custom assets.
+{%- endcomment -%}
+
+{{ content_for_header }}
+<link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}" />
+<script defer src="{{ '/assets/js/copy-code.js' | relative_url }}"></script>

@@ -1,13 +1,18 @@
 title: "AI & QA Playbook"
-description: "Practical AI use cases and QA playbooks — prompts, scripts, and experiments."
+description: "Personal blog: applying AI to Software QA — playbooks, experiments, prompts, and tools."
 url: "https://bmanubolu.github.io"
 baseurl: ""        # user site served at root
+
 # Minimal Mistakes remote theme
-remote_theme: "mmistakes/minimal-mistakes"
-# Author / repo info
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+
+# Author info
 author:
-  name: "bmanubolu"
-  email: "your-email@example.com" # optional
+  name: "B. Manubolu"
+  avatar: /assets/images/avatar.png
+  bio: "QA engineer exploring AI-driven testing, flakiness detection, and reproducible playbooks."
+  email: "you@example.com"  # optional
+
 # Plugins supported by GitHub Pages
 plugins:
   - jekyll-feed
@@ -18,30 +23,70 @@ plugins:
 nav:
   - Home: index.md
   - Blog: /blog/
-  - AI Use Cases: use-cases/ai.md
-  - QA Ideas: use-cases/qa.md
-  - Prompts: prompts.md
-  - About: about.md
+  - Use Cases: /use-cases/
+  - Prompts: /prompts/
+  - Tools: /tools/
+  - About: /about/
 
-# Theme options (Minimal Mistakes)
+# Collections / folders to organize content
+collections:
+  use_cases:
+    output: true
+    permalink: /use-cases/:path/
+  prompts:
+    output: true
+    permalink: /prompts/:path/
+  tools:
+    output: true
+    permalink: /tools/:path/
+
+# Theme defaults
 defaults:
   -
     scope:
       path: ""
+      type: "posts"
+    values:
+      layout: "single"
+      author_profile: true
+
+# Blog settings
+paginate: 6
+paginate_path: "/blog/page:num/"
+
+# Category / tag settings for discoverability
+defaults:
+  -
+    scope:
+      path: ""
+      type: "use_cases"
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "prompts"
     values:
       layout: "default"
 
-# Blog settings
-paginate: 5
-paginate_path: "/blog/page:num/"
-
-# Exclude (optional)
+# Exclude
 exclude:
-  - Gemfile
-  - Gemfile.lock
   - node_modules
   - vendor
+  - Gemfile
+  - Gemfile.lock
 
 # Build settings
 markdown: kramdown
 highlighter: rouge
+
+# Social (optional)
+plugins:
+  - jekyll-feed
+social:
+  github: bmanubolu
+  linkedin: your-linkedin
+  twitter: your-twitter
+
+# Minimal Mistakes options (tweak to taste)
+minimal_mistakes_skin: "air"
