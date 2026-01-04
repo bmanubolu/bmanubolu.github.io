@@ -1,7 +1,47 @@
 title: "AI & QA Playbook"
-description: "Practical AI use cases and QA ideas — experiments, prompts, and example integrations."
+description: "Practical AI use cases and QA playbooks — prompts, scripts, and experiments."
 url: "https://bmanubolu.github.io"
 baseurl: ""        # user site served at root
-theme: minima
+# Minimal Mistakes remote theme
+remote_theme: "mmistakes/minimal-mistakes"
+# Author / repo info
+author:
+  name: "bmanubolu"
+  email: "your-email@example.com" # optional
+# Plugins supported by GitHub Pages
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Navigation (header)
+nav:
+  - Home: index.md
+  - Blog: /blog/
+  - AI Use Cases: use-cases/ai.md
+  - QA Ideas: use-cases/qa.md
+  - Prompts: prompts.md
+  - About: about.md
+
+# Theme options (Minimal Mistakes)
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Blog settings
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+# Exclude (optional)
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
