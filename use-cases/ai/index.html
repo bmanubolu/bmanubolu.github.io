@@ -1,0 +1,27 @@
+<h1 id="ai-use-cases">AI Use Cases</h1>
+
+<p>This section collects practical AI-driven use cases for QA and engineering teams.</p>
+
+<h2 id="test-case-generation">Test-case generation</h2>
+<ul>
+  <li>Use a prompt that includes function signatures, docstrings, and examples to produce unit tests.</li>
+</ul>
+
+<p>Prompt example:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Given this function signature and docstring, produce 3 unit tests with inputs, expected outputs, and short descriptions...
+</code></pre></div></div>
+
+<h2 id="test-data-synthesis">Test-data synthesis</h2>
+<ul>
+  <li>Describe schema, constraints, and edge cases; ask the model to produce JSON records that match constraints.</li>
+</ul>
+
+<h2 id="flaky-test-triage">Flaky-test triage</h2>
+<ul>
+  <li>Collect rerun logs and stack traces; ask an assistant to rank likely causes and suggest next steps (rerun, isolate, increase timeout).</li>
+</ul>
+
+<h2 id="qa-assistant">QA assistant</h2>
+<ul>
+  <li>A chat assistant that suggests tests, suggests mutation tests, and generates minimal reproducible cases from logs.</li>
+</ul>
