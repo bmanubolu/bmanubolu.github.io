@@ -6,7 +6,7 @@ permalink: /about/
 
 <p class="lead">I'm B. Manubolu — a QA technologist focused on automation, test infrastructure, and applying AI to make testing faster, more reliable, and reproducible.</p>
 
-<div class="readable-page">
+<div class="readable-page" markdown="1">
 
 ### Summary
 - 14+ years in software quality engineering with a strong emphasis on test automation, CI/CD integration, and infrastructure for large-scale automated execution.
@@ -42,7 +42,7 @@ permalink: /about/
 
 Get in touch
 - GitHub: [bmanubolu](https://github.com/bmanubolu)  
-- Email: you@example.com (replace with your preferred contact)
+- Email: bavan.2989@gmail.com
 
 Contribute
 - I welcome contributions: add playbooks, prompt templates, or small tools under `use-cases/`, `prompts/`, or `tools/`. Include a short “how to run” and expected outputs so others can reproduce your results quickly.
