@@ -4,9 +4,11 @@ layout: page
 permalink: /about/
 ---
 
-<p class="lead">I'm B. Manubolu — a QA technologist focused on automation, test infrastructure, and applying AI to make testing faster, more reliable, and reproducible.</p>
+<p class="lead" style="font-size:1.12rem; font-weight:500; color:#111827; margin-bottom:1rem;">
+I'm B. Manubolu — a QA technologist focused on automation, test infrastructure, and applying AI to make testing faster, more reliable, and reproducible.
+</p>
 
-<div class="readable-page" markdown="1">
+<div class="readable-page" markdown="1" style="max-width:760px; margin:0 auto; padding:0 1rem; line-height:1.75; font-size:18px; color:#0f172a; box-sizing:border-box;">
 
 ### Summary
 - 14+ years in software quality engineering with a strong emphasis on test automation, CI/CD integration, and infrastructure for large-scale automated execution.
@@ -42,7 +44,7 @@ permalink: /about/
 
 Get in touch
 - GitHub: [bmanubolu](https://github.com/bmanubolu)  
-- Email: bavan.2989@gmail.com
+- Email: you@example.com (replace with your preferred contact)
 
 Contribute
 - I welcome contributions: add playbooks, prompt templates, or small tools under `use-cases/`, `prompts/`, or `tools/`. Include a short “how to run” and expected outputs so others can reproduce your results quickly.
